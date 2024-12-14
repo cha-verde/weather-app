@@ -9,10 +9,6 @@ const location = document.querySelector(".location")
 const condition = document.querySelector(".condition")
 const temperature = document.querySelector(".temperature")
 
-
-
-let isCelsius = true;
-
 class Weather {
   constructor(data) {
     this.place = data.resolvedAddress;
@@ -25,7 +21,6 @@ class Weather {
 
 async function getWeatherData(location) {
   try {
-    const unit = isCelsius ? "metric" : "us"
     const response = await fetch(
       "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
         location +
