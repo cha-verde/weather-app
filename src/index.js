@@ -29,7 +29,7 @@ async function getWeatherData(location) {
     const response = await fetch(
       "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
         location +
-        "?unitGroup=us&key=VPSWES24WT3MDWTW337UUCEW5&contentType=json"
+        "?unitGroup=metric&key=VPSWES24WT3MDWTW337UUCEW5&contentType=json"
     );
     const data = await response.json();
     const d = new Weather(data);
