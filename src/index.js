@@ -42,6 +42,7 @@ form.addEventListener("submit", function (event) {
   const icon = document.createElement("img")
 
   getWeatherData(input.value).then((data) => {
+    weatherIcon.replaceChildren()
     icon.src = require('./assets/weather-icons/' + data.days[0].icon + '.svg')
     weatherIcon.appendChild(icon)
     location.textContent = data.place;
