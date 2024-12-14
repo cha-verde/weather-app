@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(./assets/fonts/rubik-bold-webfont.woff);
+  }
+
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-family: Rubik-Bold;
+}
+
+.container{
+    width: 50%;
+    height: 70vh;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.icon-container{
+    width: 100px;
+    height: 100px;
+}
+
+.icon{
+    width: 100%;
+}
+
+form{
+    display: grid;
+    gap: 10px;
+    width: 100%
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: Rubik-Bold;
+}
+
+.search{
+    justify-self: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: Rubik-Bold;
+    border-radius: 20px;
+}
+
+.data-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.weather-icon-container{
+    width: 100px;
+    height: 100px;
+}
+
+.left{
+    display: grid;
+    justify-items: center;
+}
+
+.location{
+    font-size: 2rem;
+}
